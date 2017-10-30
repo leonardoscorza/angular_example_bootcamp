@@ -1,0 +1,14 @@
+<h2>{{ form.title }}</h2>
+<p>{{ form.description }}</p>
+
+<hr>
+
+<ul>
+  <li *ngFor="let q of form.questions">
+    <p>{{ q.title }}</p>
+  </li>
+</ul>
+
+<hr>
+
+<a href="" class="" [routerLink]="['/']">Go back</a>

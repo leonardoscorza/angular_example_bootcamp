@@ -1,0 +1,22 @@
+<h2>Forms</h2>
+
+<hr>
+
+<table>
+  <thead>
+  <tr>
+    <th data-field="name">Title</th>
+    <th data-field="name">Description</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let f of forms">
+      <td>{{ f.title }}</td>
+      <td>{{ f.description }}</td>
+      <td>
+        <a href="" class="" [routerLink]="['/forms', f.id]">Details</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
